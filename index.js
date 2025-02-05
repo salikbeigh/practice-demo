@@ -100,14 +100,18 @@ const arr = [2, 3, 4, 5, 6];
 //   0
 // );
 // console.log(output);
-const users = [
-  { name: "John", age: 25 },
-  { name: "Alice", age: 30 },
-  { name: "Bob", age: 2 },
-  { name: "salik", age: 25 },
-  { name: "salik", age: 25 },
-  { name: "sumaan", age: 25 },
-  { name: "fardeen", age: 25 },
-];
-const output = users.filter((x) => x.age < 24);
-console.log(output);
+// const users = [
+//   { name: "John", age: 25 },
+//   { name: "Alice", age: 30 },
+//   { name: "Bob", age: 2 },
+//   { name: "salik", age: 25 },
+//   { name: "salik", age: 25 },
+//   { name: "sumaan", age: 25 },
+//   { name: "fardeen", age: 25 },
+// ];
+// const output = users.filter((x) => x.age < 24);
+// console.log(output);
+
+setTimeout(() => {
+  console.log("salik");
+}, 5000);
