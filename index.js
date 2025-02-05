@@ -116,10 +116,16 @@
 //   console.log("salik");
 // }, 5000);
 
-const arr = [1, 2, 3, 4, 5, 6];
-const sum = () => {
-  let output = arr.map((x) => x * 2);
-  outputx = output.reverse();
-  console.log(outputx);
+// const arr = [1, 2, 3, 4, 5, 6];
+
+// arr.map((x) =>
+//   x % 2 === 0 ? console.log(`even :${x}`) : console.log(`odd: ${x}`)
+// );
+// Write a function that takes a string as input and returns the reversed version of the string.
+
+const revsersedString = (str) => {
+  return str == str.split("").reverse().join("");
 };
-sum();
+
+console.log(revsersedString("hello"));
+console.log(revsersedString("maliyalam"));
