@@ -123,9 +123,85 @@
 // );
 // Write a function that takes a string as input and returns the reversed version of the string.
 
-const revsersedString = (str) => {
-  return str == str.split("").reverse().join("");
-};
+// const revsersedString = (str) => {
+//   return str == str.split("").reverse().join("");
+// };
 
-console.log(revsersedString("hello"));
-console.log(revsersedString("maliyalam"));
+// console.log(revsersedString("hello"));
+// console.log(revsersedString("maliyalam"));
+
+const cart = ["shoes", "bats", "boots"];
+createOrder(cart)
+  .then(function (orderID) {
+    console.log(orderID);
+    return orderID;
+  })
+  .catch(function (err) {
+    console.log(err, "error");
+  })
+  .then(function (orderID) {
+    return proceedToPayment(orderID);
+  });
+
+function createOrder(cart) {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      if (cart.length > 0) {
+        resolve("Order created successfully with ID: " + Math.random() * 1000);
+      } else {
+        reject("Cart is empty");
+      }
+    }, 1000);
+  });
+}
+
+function proceedToPayment(orderID) {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      if (orderID) {
+        resolve("Payment successful for order ID: " + orderID);
+      } else {
+        reject("Invalid order ID");
+      }
+      resolve("Payment successful for order ID: " + orderID);
+    }, 1000);
+  });
+}
+let orderID = 123344;
+
+// const cart = ["shoes", "boots", "clothes"];
+// createOrder(cart)
+//   .then(function (orderid) {
+//     console.log(orderid);
+//     return orderid;
+//   })
+//   .catch(function (err) {
+//     console.log(err, "error");
+//   })
+//   .then(function (orderid) {
+//     return proceedPayment(orderid);
+//   });
+
+// function createOrder(cart) {
+//   return new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//       if (cart.length > 0) {
+//         resolve("order placed successfully: " + Math.random() * 1000);
+//       } else {
+//         reject("cart is empty");
+//       }
+//     }, 1000);
+//   });
+// }
+// function proceedPayment() {
+//   return new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//       if (orderid) {
+//         resolve("payment successful for order id : " + orderid);
+//       } else {
+//         reject("Invalid order id");
+//       }
+//     }, 1000);
+//   });
+// }
+// let orderid = 12345;
