@@ -130,44 +130,44 @@
 // console.log(revsersedString("hello"));
 // console.log(revsersedString("maliyalam"));
 
-const cart = ["shoes", "bats", "boots"];
-createOrder(cart)
-  .then(function (orderID) {
-    console.log(orderID);
-    return orderID;
-  })
-  .catch(function (err) {
-    console.log(err, "error");
-  })
-  .then(function (orderID) {
-    return proceedToPayment(orderID);
-  });
+// const cart = ["shoes", "bats", "boots"];
+// createOrder(cart)
+//   .then(function (orderID) {
+//     console.log(orderID);
+//     return orderID;
+//   })
+//   .catch(function (err) {
+//     console.log(err, "error");
+//   })
+//   .then(function (orderID) {
+//     return proceedToPayment(orderID);
+//   });
 
-function createOrder(cart) {
-  return new Promise(function (resolve, reject) {
-    setTimeout(function () {
-      if (cart.length > 0) {
-        resolve("Order created successfully with ID: " + Math.random() * 1000);
-      } else {
-        reject("Cart is empty");
-      }
-    }, 1000);
-  });
-}
+// function createOrder(cart) {
+//   return new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//       if (cart.length > 0) {
+//         resolve("Order created successfully with ID: " + Math.random() * 1000);
+//       } else {
+//         reject("Cart is empty");
+//       }
+//     }, 1000);
+//   });
+// }
 
-function proceedToPayment(orderID) {
-  return new Promise(function (resolve, reject) {
-    setTimeout(function () {
-      if (orderID) {
-        resolve("Payment successful for order ID: " + orderID);
-      } else {
-        reject("Invalid order ID");
-      }
-      resolve("Payment successful for order ID: " + orderID);
-    }, 1000);
-  });
-}
-let orderID = 123344;
+// function proceedToPayment(orderID) {
+//   return new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//       if (orderID) {
+//         resolve("Payment successful for order ID: " + orderID);
+//       } else {
+//         reject("Invalid order ID");
+//       }
+//       resolve("Payment successful for order ID: " + orderID);
+//     }, 1000);
+//   });
+// }
+// let orderID = 123344;
 
 // const cart = ["shoes", "boots", "clothes"];
 // createOrder(cart)
@@ -205,3 +205,36 @@ let orderID = 123344;
 //   });
 // }
 // let orderid = 12345;
+
+// Reverse a String
+// Write a function that takes a string as input and returns the reversed version of the string.
+
+// const reversedString = (str) => {
+//   return str.split("").reverse().join("");
+// };
+// console.log(reversedString("hello world"));
+// Check for Palindrome
+// Write a function to check if a given string is a palindrome (same forward and backward).
+
+// const reversedString2 = (str) => {
+//   return str === str.split("").reverse().join("");
+// };
+// console.log(reversedString2("racecar"));
+// Find the Maximum Number in an Array
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 2, 6, 8];
+// const findMax = () => {
+//   return arr.reduce((acc, curr) => (curr > acc ? curr : acc), arr[0]);
+// };
+// console.log(findMax());
+// Remove Duplicates from an Array
+
+// const dubArr = (arr) => {
+//   return [...new Set(arr)];
+// };
+// console.log(dubArr([1, 2, 1, 2, 1, 22, 1, 2, 1, 2]));
+
+const arr = [1, 2, 34, 45, 6, 7, 8, 9, 2, 1];
+const dub = () => {
+  return arr.reduce((acc, curr) => (curr > acc ? curr : acc), arr[0]);
+};
+console.log(dub(arr));
