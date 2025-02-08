@@ -233,8 +233,143 @@
 // };
 // console.log(dubArr([1, 2, 1, 2, 1, 22, 1, 2, 1, 2]));
 
-const arr = [1, 2, 34, 45, 6, 7, 8, 9, 2, 1];
-const dub = () => {
-  return arr.reduce((acc, curr) => (curr > acc ? curr : acc), arr[0]);
+// const arr = [1, 2, 34, 45, 6, 7, 8, 9, 2, 1];
+// const dub = () => {
+//   return arr.reduce((acc, curr) => (curr > acc ? curr : acc), arr[0]);
+// };
+// console.log(dub(arr));
+
+// let a = "Learning";
+// let b = "is fun!";
+// console.log(a, b);
+// let word = "programming";
+// console.log(word.slice(2));
+// let str = "CodeChef";
+// if (str.length > 5) {
+//   console.log("Long String");
+// } else "Short String";
+// function check(a, b) {
+//   if (a > b) {
+//     console.log("Coding is Fun");
+//   }
+// }
+// check(20, 11);
+// function printScore(score) {
+//   // Complete this function
+//   if (score >= 100) {
+//     console.log("Perfect score");
+//   } else if (score >= 80) {
+//     console.log("Almost perfect score");
+//   } else {
+//     console.log("Nice try");
+//   }
+// }
+// printScore(79);
+// let name = "salik";
+// console.log("hello", name);
+// var price = 105;
+// if(price > 100) {
+//   console.log("Expensive");
+// else {
+//   console.log("Affordable");
+// }
+// function solve(num1, num2) {
+//   let isEqual = "Equal";
+//   if (num1 === num2) {
+//     isEqual = "Equal";
+//   } else {
+//     isEqual = "Not Equal";
+//   }
+//   console.log(isEqual);
+// }
+// solve(1, 2);
+// var x = 5;
+// if x == 5 {
+//     console.log("x is 5");
+// }
+
+// function check(n) {
+//   if (n > 5) {
+//     console.log("the number is greater than 5");
+//   } else {
+//     console.log("the number is smaller than or equal to 5");
+//   }
+// }
+// check(10);
+// const arr = ["monday", "tuesday", n / "wednesday", "thursday"];
+// console.log(arr);
+// const arr = ["Monday", "Tuesday", "Wednesday", "Thursday"];
+// console.log(arr[arr.length - 2]);
+// // console.log(arr[arr.length - 1]);
+// const arr = [-10, 20, 30, 40, 50, 60];
+// console.log(arr.length);
+// var a = 0;
+// for (let a = 0; a < 7; a++) {
+//   console.log(a);
+// // }
+// function runLoop(n) {
+//   for (let i = 0; i < n; i++) {
+//     console.log(i);
+//   }
+// }
+// runLoop(16);
+// var a = 4;
+// var b = 1;
+// while (a != b) {
+//   console.log(b);
+//   b = b + 1; // can be written as b += 1; also
+// }
+// var a = 1;
+// var b = 4;
+// while (a != b) {
+//   console.log(b);
+//   b = b + 1;
+// }
+// const isEvenOrOdd = () => (256789 % 2 === 0 ? "Even" : "Odd");
+// console.log(isEvenOrOdd());
+// const subtract = () => 789 - 456;
+
+// // 2. A function that divides the number 678 with 8
+// const divide = () => 678 / 8;
+
+// // 3. A function that calculates the square of 89
+// const square = () => 89 * 89;
+
+// // 4. A function that checks whether the number 256789 is even or odd
+// const isEvenOrOdd = () => (256789 % 2 === 0 ? "Even" : "Odd");
+
+// // Testing the functions
+// console.log("Subtraction result:", subtract()); // Output for task 1
+// console.log("Division result:", divide()); // Output for task 2
+// console.log("Square result:", square()); // Output for task 3
+// console.log("256789 is:", isEvenOrOdd()); // Output for task 4
+
+// var person={
+//   name: 'Alice',
+//   greet() {
+//     setTimeout(() => {
+//       console.log('Hello, ' + this.name);
+//     }, 1000);
+//   }
+// }
+
+// your code goes here
+const userInfo = { name: "John", age: 30 };
+const userContact = { email: "john@example.com", phone: "1234567890" };
+
+const userProfile = {
+  ...userInfo,
+  ...userContact,
 };
-console.log(dub(arr));
+console.log(userProfile);
+
+// const person = {
+//   name: 'Alice',
+//   greet function() {
+//     setTimeout(() ==> {
+//       console.log('Hello, ' + this.name);
+//     }1000);
+
+// };
+
+// person.greet();
